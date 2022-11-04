@@ -1,5 +1,8 @@
+interface HomeProps {
+  count: number;
+}
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
 
   return (
     <h1>Contagem: {props.count}</h1>
