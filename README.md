@@ -50,7 +50,6 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
   - [React](https://reactjs.org/)
   - [Next.js](https://nextjs.org/)
   - [Typescript](https://www.typescriptlang.org/)
-  
 - Back-end
   - [Node.js](https://nodejs.org/)
   - [Typescript](https://www.typescriptlang.org/)
@@ -59,7 +58,6 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
   - [JWT](https://jwt.io/)
   - [Zod](https://github.com/colinhacks/zod)
   - [SQLite](https://www.sqlite.org/)
-  
 - Mobile
   - [Typescript](https://www.typescriptlang.org/)
   - [React Native](https://reactnative.dev/)
@@ -67,6 +65,6 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
   - [Axios](https://axios-http.com/)
   - [Native-base](https://nativebase.io/)
 
-## Layout
+## 🖌️ Layout
 
 Os recursos utilizados para o layout podem ser acessados no Figma do [Bolão da Copa](https://www.figma.com/community/file/1169028343875283461)
