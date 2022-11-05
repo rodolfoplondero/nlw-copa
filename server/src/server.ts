@@ -1,63 +1,34 @@
-import Fastify from "fastify"
-import { PrismaClient } from "@prisma/client"
-import { z } from "zod"
-import ShortUniqueId from 'short-unique-id'
+import Fastify from "fastify";
+import cors from "@fastify/cors";
+import jwt from '@fastify/jwt';
 
-import cors from "@fastify/cors"
-
-const prisma = new PrismaClient({
-    log: ['query'],
-})
+import { poolRoutes } from './routes/pools';
+import { authRoutes } from './routes/auth';
+import { gameRoutes } from './routes/game';
+import { guessRoutes } from './routes/guess';
+import { userRoutes } from './routes/user';
 
 async function bootstrap() {
     const fastify = Fastify({
         logger: true,
-    })
+    });
 
     await fastify.register(cors, {
         origin: true
-    })
+    });
 
-    fastify.get('/users/count', async () => {
-        const count = await prisma.user.count()
+    // Em produção isso precisa estar no .env
+    await fastify.register(jwt, {
+        secret: 'nlwcopa'
+    });
 
-        return { count }
-    })
+    await fastify.register(authRoutes);
+    await fastify.register(gameRoutes);
+    await fastify.register(guessRoutes);
+    await fastify.register(poolRoutes);
+    await fastify.register(userRoutes);
 
-    fastify.get('/guesses/count', async () => {
-        const count = await prisma.guess.count()
-
-        return { count }
-    })
-
-    fastify.get('/pools/count', async () => {
-        const count = await prisma.pool.count()
-
-        return { count }
-    })
-
-    fastify.post('/pools', async (request, reply) => {
-
-        const createPoolBody = z.object({
-            title: z.string(),
-        })
-
-        const { title } = createPoolBody.parse(request.body)
-
-        const generate = new ShortUniqueId({ length: 6 })
-        const code = String(generate()).toUpperCase()
-
-        await prisma.pool.create({
-            data: {
-                title,
-                code
-            }
-        })
-
-        return reply.status(201).send({ code })
-    })
-
-    await fastify.listen({ port: 3333, /*host: "0.0.0.0"*/ })
+    await fastify.listen({ port: 3333, /*host: "0.0.0.0"*/ });
 }
 
-bootstrap()
+bootstrap();
