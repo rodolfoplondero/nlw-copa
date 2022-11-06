@@ -22,11 +22,11 @@ Projeto de Bolão para os jogos da Copa do Mundo 2022, desenvolvido durante o ev
 - Listagem de jogos
 - Definição dos palpites
 
-## 🔧 Executando nlw-copa
+## ▶️ Executando nlw-copa
 
-Para instalar o nlw-copa, siga estas etapas:
+Para rodar o projeto nlw-copa, siga estas etapas:
 
-Cloe o projeto:
+Clone o projeto:
 ```
 git clone http://github.com/rodolfoplondero/nlw-copa.git
 ```
@@ -55,12 +55,13 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
 
 ## 🚀 Tecnologias
 
-- Front-end
-  - [React](https://reactjs.org/)
-  - [Next.js](https://nextjs.org/)
-  - [Typescript](https://www.typescriptlang.org/)
-  - [Tailwindcss](https://tailwindcss.com/)
-- Back-end
+### Front-end
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+### Back-end
+
   - [Node.js](https://nodejs.org/)
   - [Typescript](https://www.typescriptlang.org/)
   - [Fastify](https://www.fastify.io/)
@@ -68,13 +69,23 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
   - [JWT](https://jwt.io/)
   - [Zod](https://github.com/colinhacks/zod)
   - [SQLite](https://www.sqlite.org/)
-- Mobile
+
+### Mobile
   - [Typescript](https://www.typescriptlang.org/)
   - [React Native](https://reactnative.dev/)
   - [Expo](https://expo.dev/)
   - [Axios](https://axios-http.com/)
   - [Native-base](https://nativebase.io/)
-
+  - [React Navigation](https://reactnavigation.org/)
+  - [country-list-js](https://www.npmjs.com/package/country-list-js)
 ## 🖌️ Layout
 
 Os recursos utilizados para o layout podem ser acessados no Figma do [Bolão da Copa](https://www.figma.com/community/file/1169028343875283461)
+
+
+## 📝 Licença
+Projeto sob licença do MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE)
+
+
+
+<a href="#top">Voltar para o topo</a>
