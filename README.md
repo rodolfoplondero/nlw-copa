@@ -22,6 +22,12 @@ Projeto de Bolão para os jogos da Copa do Mundo 2022, desenvolvido durante o ev
 - Listagem de jogos
 - Definição dos palpites
 
+## 🔧 Requisitos
+
+Você precisa ter instalado:
+- [Git](https://git-scm.com/)
+- [Nodejs](https://nodejs.org/)
+
 ## ▶️ Executando nlw-copa
 
 Para rodar o projeto nlw-copa, siga estas etapas:
