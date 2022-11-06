@@ -78,13 +78,14 @@ git clone http://github.com/rodolfoplondero/nlw-copa.git
   - [Native-base](https://nativebase.io/)
   - [React Navigation](https://reactnavigation.org/)
   - [country-list-js](https://www.npmjs.com/package/country-list-js)
+  
 ## 🖌️ Layout
 
-Os recursos utilizados para o layout podem ser acessados no Figma do [Bolão da Copa](https://www.figma.com/community/file/1169028343875283461)
+Os recursos utilizados para o layout podem ser acessados no Figma do [Bolão da Copa](https://www.figma.com/community/file/1169028343875283461).
 
 
 ## 📝 Licença
-Projeto sob licença do MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE)
+Projeto sob licença do MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE).
 
 
 
