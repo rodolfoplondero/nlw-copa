@@ -107,7 +107,7 @@ export async function poolRoutes(fastify: FastifyInstance) {
         return reply.status(201).send();
     });
 
-    fastify.get('/pools/', {
+    fastify.get('/pools', {
         onRequest: [authenticate]
     }, async (request) => {
         const pools = await prisma.pool.findMany({
@@ -156,7 +156,7 @@ export async function poolRoutes(fastify: FastifyInstance) {
 
         const { id } = getPoolParams.parse(request.params);
 
-        const pools = await prisma.pool.findUnique({
+        const pool = await prisma.pool.findFirst({
             where: {
                 id
             },
@@ -186,6 +186,6 @@ export async function poolRoutes(fastify: FastifyInstance) {
             }
         });
 
-        return { pools };
+        return { pool };
     });
 }

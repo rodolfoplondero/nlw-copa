@@ -56,7 +56,7 @@ export async function guessRoutes(fastify: FastifyInstance) {
             });
         }
 
-        const game = await prisma.game.findUnique({
+        const game = await prisma.game.findFirst({
             where: {
                 id: gameId
             }
